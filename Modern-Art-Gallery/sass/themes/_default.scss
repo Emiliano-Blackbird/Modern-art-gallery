@@ -1,0 +1,9 @@
+@use '../abstracts/variables' as var;
+
+html * {
+    font-family: var.$outfit;
+}
+ 
+body {
+    overflow-x: hidden;
+} 

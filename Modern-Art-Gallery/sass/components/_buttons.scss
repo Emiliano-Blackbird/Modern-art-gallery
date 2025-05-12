@@ -1,0 +1,76 @@
+@use '../abstracts/variables' as var;
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  background-color: var.$color-almost-black;
+  color: var.$color-white;
+  text-decoration: none;
+  font-family: var.$big-shoulders;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  padding: 0;
+  border: none;
+  font-size: 20px;
+  max-height: 72px;
+  width: fit-content;
+
+  &__text {
+    padding: 24px 32px;
+    display: inline-block;
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var.$color-gold;
+    width: 56px;
+    height: 72px;
+    margin: 0;
+    flex-shrink: 0;
+    
+    svg {
+      width: 10px;
+      height: 24px;
+      display: block;
+      transform: scaleX(1);
+    }
+  }
+
+  &--right {
+    flex-direction: row-reverse;
+    
+    .btn__icon svg {
+      transform: scaleX(1);
+    }
+  }
+
+  &:hover {
+    background-color: var.$color-gold;
+    
+    .btn__icon {
+      background-color: var.$color-almost-black;
+    }
+  }
+
+  &--inverted {
+    background-color: var.$color-gold;
+    color: var.$color-almost-black;
+    
+    .btn__icon {
+      background-color: var.$color-almost-black;
+    }
+    
+    &:hover {
+      background-color: var.$color-almost-black;
+      color: var.$color-white;
+      
+      .btn__icon {
+        background-color: var.$color-gold;
+      }
+    }
+  }
+}

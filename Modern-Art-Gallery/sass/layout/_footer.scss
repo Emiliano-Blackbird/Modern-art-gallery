@@ -1,0 +1,65 @@
+@use '../abstracts/variables' as var;
+@use '../components/buttons' as btn;
+
+.footer {
+    background-color: var.$color-almost-black;
+    color: var.$color-white;
+    padding: 48px 26px;
+    margin-top: 120px;
+  
+    &__content {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      gap: 38px;
+    }
+  
+    &__logo {
+      h2 {
+        font-family: var.$big-shoulders;
+        font-size: 24px;
+        font-weight: 900;
+        color: var.$color-white;
+      }
+    }
+    
+    address.text-body-s {
+      font-style: normal;
+      line-height: 1.5;
+      opacity: 0.8;
+    }
+
+    &__social {
+      display: flex;
+      gap: 20px;
+  
+      .social-icon {
+        transition: all 0.3s ease;
+  
+        &:hover {
+          path {
+            fill: var.$color-gold;
+          }
+        }
+      }
+    }
+}
+
+/* Tablet Styles */
+@media (min-width: var.$bp-tablet) {
+  .footer {
+    padding: 56px 40px;
+    
+    &__content {
+      display: grid;
+      grid-template-columns: 1fr 2fr 1fr;
+      align-items: center;
+      gap: 65px;
+    }
+    
+    &__logo h2 {
+      font-size: 26px;
+    }
+  }
+}
+  

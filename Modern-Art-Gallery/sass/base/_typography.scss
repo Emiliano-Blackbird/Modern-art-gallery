@@ -1,0 +1,54 @@
+@use '../abstracts/variables' as var;
+
+// Clases para diferentes tamaños de la fuente Big Shoulders Display
+
+
+.text-heading-xxl {
+  font-family: var.$big-shoulders;
+  font-weight: 900;
+  font-size: 96px;
+  line-height: 100px;
+  letter-spacing: 0.03em;
+}
+
+
+.text-heading-xl {
+  font-family: var.$big-shoulders;
+  font-weight: 900;
+  font-size:50px;
+  line-height: 45px;
+  letter-spacing: 0.03em;
+}
+
+.text-heading-l {
+  font-family: var.$big-shoulders;
+  font-weight: 700;
+}
+
+.text-heading-m {
+  font-family: var.$big-shoulders;
+  font-weight: 500;
+}
+
+.text-heading-s {
+  font-family: var.$big-shoulders;
+  font-weight: 300;
+}
+
+// Clases para diferentes tamaños de la fuente Outfit light
+
+.text-body-m {
+  font-family: var.$outfit;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+}
+
+.text-body-s {
+  font-family: var.$outfit;
+  font-weight: 200;
+  line-height: 26px;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+}
