@@ -35,7 +35,7 @@ Diseñada con enfoque **Mobile First** y optimizada para escalabilidad futura.
 
 Clona el repositorio y lanza el proyecto localmente:
 
-git clone https://github.com/Emiliano-Blackbird/page-portfolio-project.git
+git clone https://github.com/Emiliano-Blackbird/Modern-art-gallery
 
 cd page-portfolio-project
 
