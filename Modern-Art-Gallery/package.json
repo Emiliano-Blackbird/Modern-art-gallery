@@ -9,13 +9,15 @@
     "preview": "vite preview",
     "serve-dist": "cd dist && python3 -m http.server 8080",
     "export-css": "mkdir -p dist/assets && sass sass/style.scss:dist/assets/style.css --style=expanded --no-source-map",
-    "build-with-css": "npm run export-css && vite build && rm -f dist/assets/index-*.css && sed -i 's|<link rel=\"stylesheet\" crossorigin href=\"\\./assets/index-[^\"]*\\.css\">||g' dist/*.html && sass sass/style.scss:dist/assets/style.css --style=expanded --no-source-map",
-    "build-all": "npm run build-with-css && cp location.html dist/"
-  },
-  "devDependencies": {
-    "vite": "^6.1.0"
+    "build-with-css": "npm run export-css && vite build && rm -f dist/assets/index-*.css && sed -i 's|<link rel=\\\"stylesheet\\\" crossorigin href=\\\"\\./assets/index-[^\\\"]*\\.css\\\">||g' dist/*.html && sass sass/style.scss:dist/assets/style.css --style=expanded --no-source-map",
+    "build-all": "npm run build-with-css && cp location.html dist/",
+    "deploy": "npm run build-all && gh-pages -d dist"
   },
   "dependencies": {
     "sass": "^1.85.0"
+  },
+  "devDependencies": {
+    "vite": "^6.1.0",
+    "gh-pages": "^6.3.0"
   }
 }
