@@ -36,9 +36,12 @@ Diseñada con enfoque **Mobile First** y optimizada para escalabilidad futura.
 Clona el repositorio y lanza el proyecto localmente:
 
 git clone https://github.com/Emiliano-Blackbird/page-portfolio-project.git
+
 cd page-portfolio-project
+
 npm install
-npm run dev
+
+npm run dev (para iniciar en navegador)
 
 ## 👨‍💻 Author
 
